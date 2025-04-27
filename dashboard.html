@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Innovation Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">Innovation Hub</div>
+  <nav>
+    <a href="#" id="logout-btn" class="btn">Logout</a>
+  </nav>
+</header>
+
+<section class="dashboard">
+  <h1>Submit Your Innovation Project</h1>
+  <section class="filters">
+    <input type="text" id="search-title" placeholder="Search by title...">
+    <input type="text" id="search-tag" placeholder="Search by tag...">
+    <input type="text" id="search-year" placeholder="Search by year...">
+    <button onclick="applyFilters()" class="btn">Search</button>
+  </section>
+  
+  <div id="dashboard-projects">
+    <!-- Projects will be loaded here -->
+  </div>
+  
+  <form id="project-form">
+    <input type="text" id="project-title" placeholder="Project Title" required>
+    <textarea id="project-description" placeholder="Project Description" required></textarea>
+    <input type="text" id="project-tags" placeholder="Tags (comma separated)">
+    <input type="text" id="project-year" placeholder="Year (e.g., 2024)">
+    <input type="url" id="project-video" placeholder="Video Link (optional)">
+    <button type="submit" class="btn">Submit Project</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

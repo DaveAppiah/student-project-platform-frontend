@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Details | Innovation Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">Innovation Hub</div>
+  <nav>
+    <a href="dashboard.html" class="btn">Dashboard</a>
+    <a href="#" id="logout-btn" class="btn">Logout</a>
+  </nav>
+</header>
+
+<section class="project-details">
+  <div id="project-info">
+    <!-- Project info loads here -->
+  </div>
+
+  <div class="comments-section">
+    <h2>Comments</h2>
+    <div id="comments-list">
+      <!-- Comments will be loaded here -->
+    </div>
+
+    <form id="comment-form">
+      <textarea id="comment-text" placeholder="Write your comment..." required></textarea>
+      <button type="submit" class="btn">Post Comment</button>
+    </form>
+  </div>
+</section>
+
+<script src="project.js"></script>
+</body>
+</html>
